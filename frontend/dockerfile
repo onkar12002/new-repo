@@ -1,6 +1,6 @@
 FROM centos:7
 LABEL author=onkarveer
-RUN yum install node -y
+RUN yum install nodejs -y
 COPY index.html /var/www/html/index.html
 EXPOSE 3000
 CMD httpd -DFOREGROUND
